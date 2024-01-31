@@ -6,21 +6,31 @@
     <title>Document</title>
     <!--<script src="hoisting.js"></script> -->
     <!-- <script src="closure.js"></script> -->
-    <script src="./event_bubbaling_capturing.js"></script>
-    <style>
+    <!-- <script src="./event_bubbaling_capturing.js"></script> -->
+    <script src="./event_delegation.js"></script>
+    <!-- <style>
         div{
             border: 2px solid blue;
             padding: 15px;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-  <div id="grandparent"> Grandparent
+    <!-- This is demo for event capturing and event bubbaling -->
+  <!-- <div id="grandparent"> Grandparent
     <div id="parent">parent
         <div id="child">
             child
         </div>
     </div>
+  </div> -->
+  <!-- This is example for event delegation -->
+  <div>
+    <ul id="categories">
+        <li id="cam"> Camera</li>
+        <li id="laptop"> Laptop</li>
+        <li id="mobile"> Mobile</li>
+    </ul>
   </div>
 </body>
 </html>
