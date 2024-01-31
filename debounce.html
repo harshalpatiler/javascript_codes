@@ -1,10 +1,10 @@
-<p><strong>search : </strong><input type="text" placeholder="search here..." onkeyup="debounce()"> </p>
+<p><strong>search : </strong><input type="text" placeholder="search here..." onkeyup="fnDebounce()"> </p>
 <script>
     function requstCall(){
         console.log('Ajax request!')
     }
     var timer;
-    function debounce(){
+    function fnDebounce(){
         clearTimeout(timer);
        timer = setTimeout(()=>{
             requstCall()

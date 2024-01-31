@@ -1,0 +1,21 @@
+<p>
+    <strong> Search : </strong>
+    <input type="text" onkeyup="fnThrottaling()" placeholder="search here...">
+</p>
+<script>
+    function reqServer() {
+        console.log("sending request to the server !")
+    }
+    let flag = true;
+    let timer;
+    function fnThrottaling() {
+        clearTimeout(timer);
+        if (flag) {
+            reqServer();
+            flag = false;
+        }
+        timer = setTimeout(() => {
+            reqServer();
+        }, 3000);
+    } 
+</script>
