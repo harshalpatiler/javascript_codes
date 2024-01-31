@@ -1,0 +1,14 @@
+<p><strong>search : </strong><input type="text" placeholder="search here..." onkeyup="debounce()"> </p>
+<script>
+    function requstCall(){
+        console.log('Ajax request!')
+    }
+    var timer;
+    function debounce(){
+        clearTimeout(timer);
+       timer = setTimeout(()=>{
+            requstCall()
+        },3000)
+    }
+
+</script>
